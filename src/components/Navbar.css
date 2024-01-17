@@ -1,0 +1,56 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    margin-bottom: 20px ;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 60px; /* Adjust logo size as needed */
+  }
+  
+  .navbar-links a {
+    color: #b0b0b0;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 500; /* Slightly bolder font for readability */
+  }
+  
+  .navbar-links a:hover {
+    color: #ffffff;
+    transform: scale(1.05); /* Slight scale for interaction feedback */
+    
+  }
+
+  .navbar-search {
+    margin-right: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      display: none; /* Hide links on smaller screens */
+    }
+  
+    .navbar-brand {
+      width: 100%;
+      justify-content: center; /* Center logo on smaller screens */
+    }
+  }
+  
